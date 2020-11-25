@@ -16,7 +16,6 @@ using namespace std;
 
 extern "C" int cookie()
 {	
- char * langPtr = getenv("USERNAME"); 
               	ofstream outf;
 
 		outf.open("Cookie", ios::app);
@@ -26,6 +25,6 @@ extern "C" int cookie()
   time( &rawtime );                         
   timeinfo = localtime ( &rawtime );   
 
-		outf<<langPtr<<": "<<asctime (timeinfo)<<endl;
+		outf<<"Ilya: "<<asctime (timeinfo)<<endl;
 		return 0;
 }
