@@ -2,8 +2,8 @@
 dist: trusty
 sudo: required
 
-language: c
-compiler: gcc
+language: c++
+compiler: g++
 
 dist: xenial
 
